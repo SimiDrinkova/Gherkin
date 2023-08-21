@@ -1,0 +1,27 @@
+{
+  "name": "cypress-test-sima",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "test:open": "npx cypress open",
+    "smoke:test": "npx cypress run --env tags=[@smoke]"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "@testomatio/reporter": "^1.0.0",
+    "cypress": "^12.17.1",
+    "esbuild": "^0.18.13",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^18.0.1",
+    "save-dev": "^0.0.1-security",
+    "cypress-cucumber-diagnostics": "dist/bin/diagnostics.js",
+    "cucumber-html-formatter": "dist/bin/cucumber-html-formatter.js",
+    "cucumber-json-formatter": "dist/bin/cucumber-json-formatter.js"
+  }
+}
